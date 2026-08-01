@@ -1,19 +1,43 @@
 aid: queuedr
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/queuedr.png
 name: QueueDr
-description: QueueDr is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: QueueDr is a healthcare scheduling automation product that automatically fills unexpected
+  appointment cancellations, rebooks no-shows, and balances provider schedules to reduce lost revenue
+  for medical practices and health systems. Originally a 500 Global-backed startup, QueueDr was acquired
+  by Phreesia and is now offered as the Phreesia Appointment Accelerator within Phreesia's patient
+  intake and engagement platform. The queuedr.com domain now redirects to Phreesia; existing customers
+  continue to sign in at the app.queuedr.com dashboard. No independent public developer portal, API
+  documentation, SDKs, or machine-readable API surface is published for QueueDr as a standalone product.
 url: https://raw.githubusercontent.com/api-evangelist/queuedr/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
+x-acquired-by: phreesia
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: acquired-no-independent-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Healthcare
+- Health IT
+- Appointment Scheduling
+- Patient Engagement
+- Medical Practice
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +47,14 @@ maintainers:
 common:
 - type: Website
   url: https://queuedr.com
+- type: Login
+  url: https://app.queuedr.com/users/sign_in
+- type: Acquirer
+  url: https://www.phreesia.com/queuedr/
+- type: DomainSecurity
+  url: security/queuedr-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
