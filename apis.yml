@@ -56,6 +56,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/phreesia/
+  name: Phreesia
+  x-relationship: acquired
+  x-evidence: "Originally a 500 Global-backed startup, QueueDr was acquired by Phreesia and is now offered as the Phreesia Appointment Accelerator within Phreesia's patient intake and engagement platform."
 - type: Website
   url: https://queuedr.com
 - type: Login
